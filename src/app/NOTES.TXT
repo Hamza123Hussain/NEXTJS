@@ -1,0 +1,28 @@
+1 TO CREATE ROUTES, MAKE FOLDERS IN THE APP FOLDER AND INSIDE EACH FOLDER CREATE A FILENAME 'page.js' that would store the routes content
+2. To Create nested routes, create a folder inside an exisiting folder in App and make a page.js file in it
+3. To create a dynamic routes, pass {params} as paramter in the page.js of the dynamic route.
+The folder that contains the dynamic route page.js must be enclosed in []
+to extract the params value do params.foldername(enclosed in [])
+5. to create a modified not found page create a file "not-found.js' in the app folder.
+you can create a not found js file in any route and customize it accordinly .
+to call the notfound page in a route, give some condtion and in it to notfound()
+
+6. To create a catch segment in which you can pass multiple params through and single file and can
+adjust the content of the route file according to the number of params, 
+
+6.1 Create a Route folder
+6.2 create a folder within it that is enclosed within [[]]
+now acces the params like params.foldername(enclosed in [[]])[paramnumber] // param number starts from zero
+in catch segment that params are stored as elements within an array 
+
+7 // the content in this file will not be shown as it is inside a private folder
+// private folder are used to serperate logic from ui
+    _name to create private folder
+
+
+8 Route Group : main folder should enclosed in (). now you acess the routes within the main folder like
+you would acess other routes in the url
+
+9. Layout is the folder that consists of the main ui and manges the rendering of the children (all files/routes)
+
+10. EACH Route or a group of routes can have their own layout by adding a layout.js file in their folder

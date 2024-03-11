@@ -9,9 +9,14 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  return (
-    <html lang="en">
+  return (<>
+      <header style={{width:'100vw',backgroundColor:'green',padding:'6%'}}>i am header</header>
+ 
+  
       <body className={inter.className}>{children}</body>
-    </html>
+  
+   
+    <footer style={{width:"100vw",backgroundColor:'grey',padding:'6%'}}>I am fotter</footer>
+    </>
   );
 }
